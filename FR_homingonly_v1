@@ -48,7 +48,7 @@ void loop() {
   }
   if (trig == 1){
       Serial.println("Button pressed");
-      if (~(vln == 1 && vrn == 1)){
+      if ((vln == 1 && vrn == 1)){
         returntohome();
       }
       trig = 0;
